@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Temperature Converter</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="card">
+
+<h1><i class="fa-solid fa-temperature-half"></i> Temperature Converter</h1>
+
+<input type="text" id="tempInput" placeholder="Enter Temperature">
+
+<div class="radio-group">
+
+<label class="radio">
+<input type="radio" name="unit" value="C">
+<span>Celsius °C</span>
+</label>
+
+<label class="radio">
+<input type="radio" name="unit" value="F">
+<span>Fahrenheit °F</span>
+</label>
+
+<label class="radio">
+<input type="radio" name="unit" value="K">
+<span>Kelvin K</span>
+</label>
+
+</div>
+
+<button onclick="convertTemp()">
+<i class="fa-solid fa-arrow-right-arrow-left"></i> Convert
+</button>
+
+<div id="result" class="result">
+Result will appear here
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
